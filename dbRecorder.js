@@ -9,6 +9,7 @@ async function run() {
 
     function recordEvent(event) {
         console.log('Recoding event', event.name, event.body.player)
+        event.time = new Date().toISOString()
         events.insert(event)
     }
 }

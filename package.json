@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "esticade": "^1.0.13",
-    "mongodb": "^3.0.7"
+    "mongodb": "^3.0.7",
+    "mugloar-solver": "^1.0.1"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"

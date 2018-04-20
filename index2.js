@@ -3,7 +3,7 @@ const name = 'Mister Dark';
 //////////////////////////////////////////
 
 const service = require('esticade')(name)
-// const solver = require('mugloar-solver')
+const solver = require('mugloar-solver')
 
 const games = {}
 
@@ -19,8 +19,8 @@ function addGamePiece(gameId, piece) {
 
     if (game.knight && game.weather) {
         console.log("We have game data!")
-        // let dragon = solver.solve(game.knight, game.weather);
-        service.emit("Dragon Appears", {gameId, dragon: null})
+        let dragon = solver.solve(game.knight, game.weather);
+        service.emit("Dragon Appears", {gameId, dragon})
     }
 }
 
